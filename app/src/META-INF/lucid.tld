@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+	version="2.1">
+
+
+	<!-- ========== Tag Library Description Elements ========================= -->
+
+	<description>
+		The core JavaServer Faces custom actions that are independent of
+		any particular RenderKit.
+	</description>
+	<tlib-version>1.0</tlib-version>
+	<short-name>lucid</short-name>
+	<uri>http://sourceforge.net/lucidjsf</uri>
+
+	<!-- ========== Tag Descriptions ========================================= -->
+	<tag>
+		<description>
+			Invokes the specified method on the defined phases
+		</description>
+		<name>invokeMethod</name>
+		<tag-class>com.lucid.components.InvokeMethodTag</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<description>
+				The name of the component attribute to be set.
+			</description>
+			<name>onEncodeBegin</name>
+			<deferred-method>
+				<method-signature>
+					void action()
+				</method-signature>
+			</deferred-method>
+		</attribute>
+	</tag>
+</taglib>
